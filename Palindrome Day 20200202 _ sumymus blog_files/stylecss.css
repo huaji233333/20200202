@@ -1,0 +1,126 @@
+
+div.wm-cleaner{
+	clear: both;
+}
+
+img.wm-thumbnail-img{
+	margin: 5px 0 !important;
+	border: none !important;
+}
+img.wm-thumbnail-img.square{
+	border: none !important;
+	border-radius: 7px !important;
+}
+img.wm-thumbnail-img.circle{
+	border-radius: 100px !important;
+}
+
+span.first_name{
+	word-wrap: break-word !important;
+}
+
+i.jstree-themeicon-custom{
+	width: 20px !important;
+	height: 20px !important;
+}
+
+.wm-custom-tree-icon{
+	background-color: #CCCCCC !important;
+	width: 24px !important;
+	height: 24px !important;
+	border: none !important;
+	border-radius: 100px !important;
+}
+
+.hidden-node {
+	color: red;
+}
+
+.px_add input {
+	width: 50%;
+	margin-right: 5px;
+	font-weight: normal;
+}
+.px_add {
+	font-size: initial;
+	display: flex;
+	font-weight: bolder;
+}
+
+
+@media (max-width: 768px) {
+	/* done by Twisha - to resolve the loader issue on click (expanding tree)  */
+	.jstree-proton > .jstree-container-ul .jstree-loading > .jstree-ocl{
+		background-position:center center !important;
+	}
+    .jstree-proton-responsive .jstree-container-ul,
+    .jstree-proton-responsive .jstree-container-ul ul {
+        padding-left: 0;
+    }
+    .jstree-proton-responsive .jstree-node {
+        margin-left: 15px;
+        position: relative;
+    }
+    .jstree-container-ul.jstree-children {
+        width: auto;
+        overflow-x: auto;
+    }
+    .jstree-anchor > .jstree-themeicon {
+        margin-top: 9px !important;
+    }
+    .jstree-proton-responsive .jstree-node .jstree-node {
+        margin-left: 25px;
+    }
+    .jstree-proton-responsive .jstree-node:after {
+        content: "";
+        width: 18px;
+        height: 1px;
+        background-color: #ccc;
+        position: absolute;
+        top: 19px;
+        display: block;
+        left: 14px;
+        z-index: -1;
+    }
+    .jstree-proton-responsive .jstree-node:before {
+        content: "";
+        width:  1px;
+        height: 100%;
+        position: absolute;
+        display: block;
+        left: 14px;
+        background-color: #ccc;
+        top: -19px;
+        z-index: -1;
+    }
+    /* By twisha - To resolve loader issue in mobile device */
+    .jstree-proton-responsive .jstree-last{
+		position:relative;
+    }
+    /* By twisha - To resolve loader issue in mobile device (Top position changed only) */
+    .jstree-proton-responsive .jstree-leaf > .jstree-ocl {
+        width: 18px;
+        height: 18px;
+        background-position: -6px -36px;
+        background-color: #fff !important;
+        z-index: 1;
+        margin: 0;
+        top: 10px;
+        left: 5px;
+        position: absolute;
+    }
+    .jstree-anchor {
+        margin-left: 0;
+    }
+    .jstree-proton-responsive .jstree-leaf .jstree-anchor {
+        margin-left: 30px !important;
+		height: 20px;
+    }
+    .jstree-proton-responsive .jstree-last .jstree-leaf > .jstree-ocl {
+        height: 0;
+        width: 0;
+    }
+    .jstree-proton-responsive .jstree-node:last-child:before {
+       height: 38px;
+    }
+}
